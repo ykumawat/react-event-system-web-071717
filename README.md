@@ -20,7 +20,7 @@ class Tickler extends React.Component {
   constructor() {
     super();
     
-    this.greet = this.greet.bind(this);
+    this.tickle = this.tickle.bind(this);
   }
   
   tickle() {
