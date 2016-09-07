@@ -15,6 +15,7 @@ they are the _exact same events_, just implemented in a consistent way! That mea
 ## How to add event handlers
 Consider the following component:
 
+<a name="tickler-example"></a>
 ```js
 class Tickler extends React.Component {
   constructor() {
@@ -46,9 +47,12 @@ use a function reference. It looks like this:
 <button onClick={this.tickle}>Tickle me!</button>
 ```
 
-As you can see, we're passing a function _reference_, and not executing the `tickle` function. Keep in mind that we also
-need to bind the function to the class instance in order to use it, as we saw in the complete example previously. Now,
-when we click the button, we see a message in our console. Awesome!
+As you can see, we're passing a function _reference_, and not executing the `tickle` function. Now, when we click the
+button, we see a message in our console. Awesome! Going back to the [complete example](#tickler-example), let's take a
+quick look at the other code living there. The important bit here is the `constructor()`, where we're binding our
+`tickle()` method. Note that this is _not_ required in this example (since we're not accessing the component's `this`).
+Realistically, all methods in a React component class will almost always use `this` in one way or another, so it's a
+good idea to get the binding out of the way, even if you don't explicitly need it yet.
 
 There are a lot of event handlers we can add to an element, for example `onKeyUp`, `onMouseDown`, `onFocus`, `onSubmit`,
 and many more. Check out the [complete list of supported events][supported-events] to see what else you can play around
