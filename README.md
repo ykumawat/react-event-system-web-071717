@@ -1,9 +1,14 @@
 # React Event System
 
+## Overview
+
+In this lesson. we'll cover the event system in React. 
+
 ## Objectives
 1. Explain how React events differ from browser events
 2. Describe how React standardizes events for compatibility
-3. Explain how we use React events in our application
+3. Explain how to use React events in our application
+4. Add event handlers to an element
 
 ## What's the event system in React?
 React has its own event system with special event handlers called `SyntheticEvent`. The reason for having a specific
