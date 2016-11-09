@@ -43,10 +43,12 @@ We have a `tickle()` function, but no way to trigger it! This is a perfect time 
 <button onClick={this.tickle}>Tickle me!</button>
 ```
 
-As you can see, we're passing a function _reference_, and not executing the `tickle` function. Now, when we click the button, we see a message in our console. Awesome! Going back to the [complete example](#tickler-example), let's take a quick look at the other code living there. The important bit here is the `constructor()`, where we're binding our `tickle()` method. Note that this is _not_ required in this example (since we're not accessing the component's `this`). Realistically, all methods in a React component class will almost always use `this` in one way or another, so it's a good idea to get the binding out of the way, even if you don't explicitly need it yet.
+As you can see, we're passing a function _reference_, and not executing the `tickle` function. Now, when we click the button, we see a message in our console. Awesome! Going back to the [complete example] (maybe a link to a different example here??) (#tickler-example), let's take a quick look at the other code living there. The important bit here is the `constructor()`, where we're binding our `tickle()` method. Note that this is _not_ required in this example (since we're not accessing the component's `this`). Realistically, all methods in a React component class will almost always use `this` in one way or another, so it's a good idea to get the binding out of the way, even if you don't explicitly need it yet.
 
 There are a lot of event handlers we can add to an element, for example `onKeyUp`, `onMouseDown`, `onFocus`, `onSubmit`, and many more. Check out the [complete list of supported events](https://facebook.github.io/react/docs/events.html#supported-events) to see what else you can play around with!
 
 ## Resources
 - [React Synthetic Events](https://facebook.github.io/react/docs/events.html)
 - [Supported-events](https://facebook.github.io/react/docs/events.html#supported-events)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-event-system'>Event System</a> on Learn.co and start learning to code for free.</p>
