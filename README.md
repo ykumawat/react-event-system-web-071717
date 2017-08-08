@@ -1,8 +1,7 @@
 # React Event System
 
 ## Overview
-
-In this lesson. we'll cover the event system in React. 
+In this lesson, we'll cover the event system in React.
 
 ## Objectives
 1. Explain how React events differ from browser events
