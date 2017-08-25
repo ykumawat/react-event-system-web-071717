@@ -46,4 +46,3 @@ There are a lot of event handlers we can add to an element, for example `onKeyUp
 - [Supported-events](https://facebook.github.io/react/docs/events.html#supported-events)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-event-system'>Event System</a> on Learn.co and start learning to code for free.</p>
-<p class='util--hide'>View <a href='https://learn.co/lessons/react-event-system'>Event System</a> on Learn.co and start learning to code for free.</p>
