@@ -1,5 +1,5 @@
 # React Event System
-
+<!--  -->
 ## Overview
 In this lesson, we'll cover the event system in React.
 
@@ -32,7 +32,7 @@ class Tickler extends React.Component {
 ```
 
 We have a `tickle()` function, but no way to trigger it! This is a perfect time to add an event handler so that we can see the message in our console. We attach event handlers to an element much like how we'd add a prop. The handler name is always comprised of `on`, and the event name itself — for example `click`. These are joined together and camel-cased, so if we wanted to add a click handler, we'd call the prop `onClick`. This prop takes a function as a value — it can either be a reference to a method on the class (like our `tickle()` method), or an inline function. Most of time, we'll use a function reference. It looks like this:
- 
+
  ```js
 <button onClick={this.tickle}>Tickle me!</button>
 ```
